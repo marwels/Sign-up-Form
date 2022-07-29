@@ -9,6 +9,7 @@
 body {
     display: flex;
     position: relative;
+    margin: 0px;
 }
 
 #picture {
@@ -20,17 +21,61 @@ body {
     flex: 0 0 33%;
     height: 100vh;
     color: #F0A500;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
+    padding-top: 25vh;
+    text-align: center;
 }
 
 #picture>h1 {
-    text-align: center;
-    font-family: 'sf_speakeasyregular', Arial, sans-serif; 
+    font-family: 'sf_speakeasyregular', Arial, sans-serif;
+    font-size: 12vw;
+
 }
 
-#rightSide {
-     background-color: black;
-     color: #F4F4F4;
+#picture>p {
+    color: #F4F4F4;
+    font-family: 'sf_speakeasyregular', Arial, sans-serif;
+
+
+}
+
+.rightSide {
+    background-color: black;
+    color: #F4F4F4;
+    font-size: 3vh;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+    
+.rightCenter {
+    background-color: #a3a29f;
+    color: black;
+    
+}
+    
+.black, .rightCenter {
+    padding-left: 4vw;
+
+}
+
+.rightSide>.black>h1, .rightSide>.black>h2 {
+   font-size: 3vh;
+   font-weight: 300;
+   margin: 0;
+}
+
+.intro {
+    padding-top: 12vh;
+}
+
+#specialh2 {
+    margin-top: 20px;
+}
+
+.rightCenter>h2 {
+    font-size: 4vh;
+   font-weight: 400;
+   margin-top: 50px;
 }
