@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'sf_speakeasyregular';
+       src: url('./SF_Speakeasy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     display: flex;
 }
@@ -13,6 +21,10 @@ body {
     color: #F0A500;
 }
 
+#picture>h1 {
+    text-align: center;
+    font-family: 'sf_speakeasyregular', Arial, sans-serif; 
+}
 
 #rightSide {
      background-color: black;
