@@ -49,13 +49,13 @@ body {
 
 }
     
-.rightCenter {
+.form_gray {
     background-color: #a3a29f;
     color: black;
     
 }
     
-.black, .rightCenter {
+.black, .form_gray {
     padding-left: 4vw;
 
 }
@@ -74,8 +74,20 @@ body {
     margin-top: 20px;
 }
 
-.rightCenter>h2 {
+.form_gray>h2 {
     font-size: 4vh;
    font-weight: 400;
    margin-top: 50px;
+}
+
+.form_inputs {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.form_columnA, .form_columnB {
+    display: flex;
+    flex-direction: column;
 }
