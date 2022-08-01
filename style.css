@@ -147,7 +147,15 @@ button {
   color: var(--darkred);
 }
 
+/*validation styles*/
 
+input.valid {
+    border-color: green;
+
+}
+input.invalid {
+    border-color: var(--darkred);
+}
 input + p /*input next to p*/ {
     text-align: center;
     margin: 0 10px;
