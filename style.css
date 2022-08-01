@@ -3,6 +3,16 @@
        src: url('./SF_Speakeasy-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+:root {
+    --yellow: #F0A500; 
+    --verylightgray: #F4F4F4;
+    --lightgray: #a3a29f;
+    --black: rgb(0,0,0);
+    --darkred: rgb(139, 0, 0);
+    --boxshadow: rgba(66, 68, 90, 1);
+
 
 }
 
@@ -13,14 +23,14 @@ body {
 }
 
 #picture {
-    background-color: black;
+    background-color: var(--black);
     background-image: url(./david-sinclair-esOA3o92zxE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
     flex: 0 0 33%;
     height: 100vh;
-    color: #F0A500;
+    color: var(--yellow);
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -35,23 +45,23 @@ body {
 }
 
 #picture>p {
-    color: #F4F4F4;
+    color: var(--verylightgray);
     font-family: 'sf_speakeasyregular', Arial, sans-serif;
 
 
 }
 
 .rightSide {
-    background-color: black;
-    color: #F4F4F4;
+    background-color: var(--black);
+    color: var(--verylightgray);
     font-size: 3vh;
     font-family: 'Source Sans Pro', sans-serif;
 
 }
     
 .form_gray {
-    background-color: #a3a29f;
-    color: black;
+    background-color: var(--lightgray);
+    color: var(--black);
     padding: 30px 0;
     margin-top: 15px;
 }
@@ -104,23 +114,35 @@ input {
     outline: 0;
     border: rgba(0, 0, 0, 0.719) solid 2px;
     border-radius: 5px;
-    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px var(--boxshadow);
+    padding: 4px;
 }
 
 input:focus {
-    border: 3px solid #F0A500 ;
+    border: 3px solid var(--yellow);
 }
 
 .error {
-border: 2px solid darkred ;
+border: 2px solid var(--darkred) ;
 }
 
 button {
     font-size: 2.2vh;
     margin-top: 40px;
-    border: #F0A500;
+    border: var(--yellow);
      border-radius: 5px;
      box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-     background-color: #F0A500;
+     background-color: var(--yellow);
+     padding: 8px;
      /* outline : 0; */
+}
+
+
+    a:link, a:visited  {
+        color: var(--yellow);
+        text-decoration: none;
+    }
+
+    a:hover, a:active {
+  color: var(--darkred);
 }
