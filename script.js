@@ -4,8 +4,9 @@ const inputs = document.querySelectorAll("input");
 const patterns = {
     phoneNumber: /^\d{9}$/,
     firstName: /^[a-z]{3,20}$/i,
-    lastName: /^[a-z]{3,20}$/i,
-    password: /^[\w@-]{8,20}$/,
+    lastName: /^[a-z\-]{3,20}$/i,
+    password: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,
+    // /^[\w@-]{8,20}$/,
     email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
     // (yourname) @ (domain) . (extension) (.again)
 }
