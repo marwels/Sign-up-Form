@@ -12,8 +12,6 @@
     --black: rgb(0,0,0);
     --darkred: rgb(139, 0, 0);
     --boxshadow: rgba(66, 68, 90, 1);
-
-
 }
 
 body {
@@ -47,8 +45,6 @@ body {
 #picture>p {
     color: var(--verylightgray);
     font-family: 'sf_speakeasyregular', Arial, sans-serif;
-
-
 }
 
 .rightSide {
@@ -56,7 +52,7 @@ body {
     color: var(--verylightgray);
     font-size: 3vh;
     font-family: 'Source Sans Pro', sans-serif;
-
+    width: 100%;
 }
     
 .form_gray {
@@ -68,7 +64,6 @@ body {
     
 .black, .form_gray {
     padding-left: 4vw;
-
 }
 
 .rightSide>.black>h1, .rightSide>.black>h2 {
@@ -95,13 +90,11 @@ body {
 .form_inputs {
     padding-left: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+    flex-direction: column;
 }
 
-.form_columnA, .form_columnB {
-    display: flex;
-    flex-direction: column;
+input {
+    max-width: 70%;
 }
 
 label {
@@ -168,5 +161,8 @@ input + p /*input next to p*/ {
 input.invalid + p {
     opacity: 1;
     height: auto;
-    margin-bottom: 20vh;
+    margin-bottom: 2vh;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+
 }

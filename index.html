@@ -35,36 +35,34 @@
 
             <form action="example.com/path" method="post">
                 <div class="form_inputs">
-                    <div class="form_columnA">
-                        <label for="firstName">FIRST NAME*</label>
-                        <input tabindex="1" type="text" id="firstName" placeholder="James" name="firstName"
-                            minlength="1" maxlength="2000" required>
-                        <p>First name must contain 3 - 20 characters</p>
+                    <label for="firstName">FIRST NAME*</label>
+                    <input tabindex="1" type="text" id="firstName" placeholder="James" name="firstName" minlength="1"
+                        maxlength="2000" required>
+                    <p>First name must contain 3 - 20 letters</p>
 
-                        <label for="email">EMAIL*</label>
-                        <input tabindex="3" type="email" id="email" placeholder="007@MI6.com" name="email" minlength="1"
-                            maxlength="2000" required>
-                        <p>Email must be a valid address, e.g. me@mydomain.com</p>
+                    <label for="lastName">LAST NAME*</label>
+                    <input tabindex="2" type="text" id="lastName" placeholder="Bond" name="lastName" minlength="1"
+                        maxlength="2000" required>
+                    <p>Last name must contain 3 - 20 letters</p>
 
-                        <label for="password">PASSWORD*</label>
-                        <input class="error password1" tabindex="5" type="password" id="password"
-                            placeholder="S#akenNot3tirred!" name="password" minlength="1" maxlength="2000" required>
-                        <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
-                    </div>
-                    <div class="form_columnB">
-                        <label for="lastName">LAST NAME*</label>
-                        <input tabindex="2" type="text" id="lastName" placeholder="Bond" name="lastName" minlength="1"
-                            maxlength="2000" required>
-                        <p>Last name must contain 3 - 20 characters</p>
+                    <label for="email">EMAIL*</label>
+                    <input tabindex="3" type="email" id="email" placeholder="007@MI6.com" name="email" minlength="1"
+                        maxlength="2000" required>
+                    <p>Email must be a valid address, e.g. me@mydomain.com</p>
 
-                        <label for="phoneNumber">PHONE NUMBER*</label>
-                        <input tabindex="4" type="number" id="phoneNumber" placeholder="111 222 333" name="phoneNumber">
-                        <p>Telephone must be a valid PL cellphone number (9 digits)</p>
+                    <label for="phoneNumber">PHONE NUMBER*</label>
+                    <input tabindex="4" type="number" id="phoneNumber" placeholder="111 222 333" name="phoneNumber">
+                    <p>Telephone must be a valid PL cellphone number (9 digits)</p>
 
-                        <label for="password2">CONFIRM PASSWORD*</label>
-                        <input class="error password2" tabindex="6" type="password" id="password2"
-                            placeholder="S#akenNot3tirred!" name="password2" minlength="1" maxlength="2000" required>
-                    </div>
+                    <label for="password">PASSWORD*</label>
+                    <input class="error password1" tabindex="5" type="password" id="password1"
+                        placeholder="S#akenNot3tirred!" name="password" minlength="1" maxlength="2000" required>
+                    <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+
+                    <label for="password2">CONFIRM PASSWORD*</label>
+                    <input class="error password2" tabindex="6" type="password" id="password2"
+                        placeholder="S#akenNot3tirred!" name="password2" minlength="1" maxlength="2000" required>
+                    <p>Passwords don't match! Try again.</p>
                 </div>
 
                 <button tabindex="7" type="submit">Create Account</button>
